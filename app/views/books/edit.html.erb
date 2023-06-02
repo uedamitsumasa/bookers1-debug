@@ -1,0 +1,10 @@
+<h1>Editing Book</h1>
+
+<%= form_with(model: @book, local: true) do |form| %>
+  <%= render 'form', form: form %>
+
+  <%= form.submit 'Update Book' %>
+<% end %>
+
+<%= link_to 'Show', @book %> |
+<%= link_to 'Back', books_path %>
